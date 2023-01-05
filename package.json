@@ -27,7 +27,7 @@
       "mode": "menu-bar"
     },
     {
-      "name": "details",
+      "name": "detail",
       "title": "Desk Status",
       "description": "Get the current desk status",
       "mode": "view"
