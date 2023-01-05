@@ -9,12 +9,40 @@
     "Productivity"
   ],
   "license": "MIT",
+  "preferences": [
+    {
+      "name": "baseUrl",
+      "title": "UpsyDesky URL",
+      "description": "The URL of the UpsyDesky instance",
+      "type": "textfield",
+      "required": true,
+      "placeholder": "http://<iq or fqdn>"
+    }
+  ],
   "commands": [
     {
-      "name": "index",
-      "title": "Control Desk",
-      "description": "Control desk height",
+      "name": "menubar",
+      "title": "UpsyDesky Menu",
+      "description": "Control desk height from the menu bar",
       "mode": "menu-bar"
+    },
+    {
+      "name": "details",
+      "title": "Desk Status",
+      "description": "Get the current desk status",
+      "mode": "view"
+    },
+    {
+      "name": "sit",
+      "title": "Sit",
+      "description": "Move desk to sitting mode",
+      "mode": "no-view"
+    },
+    {
+      "name": "stand",
+      "title": "Stand",
+      "description": "Move desk to standing mode",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
