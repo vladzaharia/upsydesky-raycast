@@ -4,11 +4,6 @@ interface PreferenceValues {
   baseUrl: string;
 }
 
-export default async function getPreferenceValue() {
-  const preferences = getPreferenceValues<PreferenceValues>();
-  console.log(preferences);
-}
-
 export class Preferences {
     private static _instance: Preferences;
     public static Instance() {

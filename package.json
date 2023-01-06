@@ -3,7 +3,7 @@
   "name": "upsydesky",
   "title": "UpsyDesky",
   "description": "Controls a standing desk using UpsyDesky",
-  "icon": "command-icon.png",
+  "icon": "upsydesky.png",
   "author": "vladzaharia",
   "categories": [
     "Productivity"
@@ -24,25 +24,29 @@
       "name": "menubar",
       "title": "UpsyDesky Menu",
       "description": "Control desk height from the menu bar",
-      "mode": "menu-bar"
+      "mode": "menu-bar",
+      "icon": "upsydesky.png"
     },
     {
       "name": "detail",
       "title": "Desk Status",
       "description": "Get the current desk status",
-      "mode": "view"
+      "mode": "view",
+      "icon": "upsydesky.png"
     },
     {
       "name": "sit",
       "title": "Sit",
       "description": "Move desk to sitting mode",
-      "mode": "no-view"
+      "mode": "no-view",
+      "icon": "sit.png"
     },
     {
       "name": "stand",
       "title": "Stand",
       "description": "Move desk to standing mode",
-      "mode": "no-view"
+      "mode": "no-view",
+      "icon": "stand.png"
     }
   ],
   "dependencies": {

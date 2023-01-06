@@ -1,15 +1,6 @@
-import { showToast, Toast } from "@raycast/api";
+import PresetCommand from "./presetCommand";
+import { getPresetForState } from "./utils/upsydesky";
 
-export default async function Command() {
-    const success = false;
-
-    if (success) {
-        await showToast({ title: "Success!", message: "Set desk to standing mode" });
-    } else {
-        await showToast({
-            style: Toast.Style.Failure,
-            title: "Something went wrong",
-            message: "Couldn't set desk to standing mode",
-        });
-    }
+export default async function Stand() {
+    return PresetCommand(getPresetForState("Standing"));
 }
